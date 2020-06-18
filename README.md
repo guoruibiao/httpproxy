@@ -26,8 +26,8 @@ a simple http proxy for helping me request at office network.
 [GIN-debug] Listening and serving HTTP on :80
 ```
 
-The key parameter is `url`, which is the target URL you want to proxy.
-And the `METHOD` will keep in the same with the origin request.Any other parameters 
+The key parameters is `url` and `method`, `url` is the target URL you want to proxy.
+And the `method` will keep in the same with the request.Any other parameters 
 will be send to `url` with no modified.
 
 There can be many features to be added into this repo, so maybe i can do it better 

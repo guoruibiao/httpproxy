@@ -9,12 +9,13 @@ import (
 	"net/http"
 	"os"
 	"strconv"
+	"strings"
 )
 
 
 func Post(ctx *gin.Context) {
 	// Method 代理与源请求保持一致
-	method := ctx.Request.Method
+	method := strings.ToUpper(ctx.PostForm("method"))
 	url    := ctx.PostForm("url")
 
 	// header 透传

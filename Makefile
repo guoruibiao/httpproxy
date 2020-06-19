@@ -6,12 +6,9 @@ GOGET=$(GOCMD) get
 BINARY_NAME=httpproxy
 BINARY_UNIX=$(BINARY_NAME)
 
-all: deps build
+all: build
 build:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 $(GOBUILD) -o ${BINARY_NAME}
-
-deps:
-	$(GOGET) github.com/garyburd/redigo/redis
 
 # Cross compilation
 build-linux:

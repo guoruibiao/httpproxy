@@ -3,7 +3,7 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
-BINARY_NAME=shorturl
+BINARY_NAME=httpproxy
 BINARY_UNIX=$(BINARY_NAME)
 
 all: deps build

@@ -107,8 +107,6 @@ func main() {
 
 	var port = flag.Int("port", -1, "the port of the service")
 	flag.Parse()
-	// TODO 上线删除
-	*port = 80
 	if *port <= 0 {
 		fmt.Println("WRONG PORT WITH ", *port)
 		os.Exit(-1)
